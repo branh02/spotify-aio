@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Spotify AIO</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body>
+    <div class="login-container" id="login-section">
+        <button id="login-button">Log in with Spotify</button>
+    </div>
+    <div id="user-profile" class="user-profile">
+        <a id="user-profile-link" target="_blank">
+            <img id="user-profile-picture" alt="User Profile Picture" />
+        </a>
+        <div id="user-details"></div>
+        <div class="user-stats-container">
+            <div class="user-stats" id="user-followers">
+                <span class="user-stats-number"></span>
+                <div class="user-stats-title">Followers</div>
+            </div>
+            <div class="user-stats" id="playlist-total">
+                <span class="user-stats-number2"></span>
+                <div class="user-stats-title">Playlists</div>
+            </div>
+        </div>
+    </div>
+    <div class="tracks-main">
+        <div class="main-header" style="display: none;">
+            Your Top Tracks Of All Time
+        </div>
+        <div id="tracks-container" style="display: none;" class="horizontal-scroll">
+            <!-- tracks display -->
+        </div>    
+    </div>
+    <div class="artists-main">
+        <div class="main-header">
+            Your Top Artists Of All Time
+        </div>
+        <div id="artists-container" style="display: none;" class="horizontal-scroll">
+            <!-- artists display -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
